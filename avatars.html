@@ -2,23 +2,31 @@
 <html>
 <head>
 	<title>Avatars</title>
+	<script src="js/lib/jscolor.min.js"></script>
+	<script src="js/avatars.js"></script>
+
 	<link rel="stylesheet" href="css/toolbar.css"/>
 	<link rel="stylesheet" href="css/app.css"/>
+	<link rel="stylesheet" href="css/avatars.css"/>
 </head>
-<body>
+<body onload="setup()">
 	<div class="frame" id="mainpage">
 
 		<div class="content">
 			<h1>Avatars</h1>
 			<p>This is where the list of avatars will go.</p>
-			<div>
-				<h3>Patrick</h3>
-				<button>Left</button>
-				<img height="100" width="100" src="assets/avatars/star.png">
-				<img height="100" width="100" src="assets/avatars/kevin.png">
-				<button>Right</button>
+			<div class="selection">
+				<div class="arrow-left"></div>
+				<div class="left-avatar"><img height="100%" width="100%" src="assets/avatars/unknown.png"></div>
+				<div class="center-avatar"><img height="100%" width="100%" src="assets/avatars/star.png"></div>
+				<div class="right-avatar"><img height="100%" width="100%" src="assets/avatars/kevin.png"></div>
+				<div class="arrow-right"></div>
 			</div>
 			<h3>Level 3</h3>
+
+			<div class="color">
+				<input id="primarypicker" value="ffcc00" class="jscolor {width:243, height:150, position:'right', borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666', shadow: false}">
+			</div>
 		</div>
 
 		<div class="toolbar">
