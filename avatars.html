@@ -2,8 +2,12 @@
 <html>
 <head>
 	<title>Avatars</title>
-	<script src="js/lib/jscolor.min.js"></script>
+	<script src="lib/jscolor.min.js"></script>
 	<script src="js/avatars.js"></script>
+
+	<script src="lib/jquery.js"></script>
+	<script src="lib/spectrum.js"></script>
+	<link rel="stylesheet" href="lib/spectrum.css"/>
 
 	<link rel="stylesheet" href="css/toolbar.css"/>
 	<link rel="stylesheet" href="css/app.css"/>
@@ -25,7 +29,8 @@
 			<h3>Level 3</h3>
 
 			<div class="color">
-				<input id="primarypicker" value="ffcc00" class="jscolor {width:243, height:150, position:'right', borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666', shadow: false}">
+				<!--<input id="primarypicker" value="ffcc00" class="jscolor {width:243, height:150, position:'right', borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666', shadow: false}">-->
+				<input type='text' id="flat" />
 			</div>
 		</div>
 
