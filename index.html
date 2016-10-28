@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script type="text/javascript" src="js/userlogin.js"></script>
+</head>
+<body>
+	<h1>Race Conditions</h1>
+	<p>
+		Log in
+		<form>
+			Username: <input type="text" id="login_username" autofocus></input></br>
+			Password: <input type="password" id="login_password"></input></br>
+			<input id="login_submit" type="button" class="btn" value="Login" onClick="login()" style="padding:5px 10px"></input>
+			<span id="loginoutput"></span>
+		</form>
+	</p>
+
+	<p>
+		Don't have an account? Sign up here!
+		<form>
+			Username: <input type="text" id="reg_username" autofocus></input></br>
+			Password: <input type="password" id="reg_password"></input></br>
+			Confirm Password: <input type="password" id="reg_confirmpassword"></input></br>
+			<input id="reg_submit" type="button" class="btn" value="Register" onClick="register()" style="padding:5px 10px"></input>
+			<span id="registeroutput"></span>
+		</form>
+	</p>
+
+	<a href="main.html">For purposes of A4, click here to skip login</a>
+</body>
+</html>
