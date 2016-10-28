@@ -2,27 +2,40 @@
 <html>
 <head>
 	<title>Main Menu</title>
-	<link rel="stylesheet" href="css/toolbar.css" />
+	<link rel="stylesheet" href="css/toolbar.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/w3.css"/>
 </head>
 <body>
-	<h1>Race Condition</h1>
-	<p>Let's Race!</p>
-	<ul>
-		<li><a href="main.html">Home</a></li>
-		<li><a href="map.html">Map</a></li>
-		<li><a href="alarm.html">Alarm</a></li>
-		<li><a href="avatars.html">Avatars</a></li>
-		<li><a href="achievements.html">Achievements</a></li>
-		<li><a href="quests.html">Quests</a></li>
-	</ul>
+	<div class="frame">
 
-	<div class="toolbar">
-		<a href="main.html"><img src="assets/toolbar/home.png" height="50" width="50"></img></a>
-		<a href="map.html"><img src="assets/toolbar/map.png" height="50" width="50"></img></a>
-		<a href="alarm.html"><img src="assets/toolbar/alarm.png" height="50" width="50"></img></a>
-		<a href="avatars.html"><img src="assets/toolbar/avatar.png" height="50" width="50"></img></a>
-		<a href="achievements.html"><img src="assets/toolbar/achievement.png" height="50" width="50"></img></a>
-		<a href="quests.html"><img src="assets/toolbar/quest.png" height="50" width="50"></img></a>
+		<div class="content">
+
+			<div class="progressbar">
+				<div class="w3-progress-container" style="width: 300px;">
+				    <div id="myBar" class="w3-progressbar w3-green" style="width:20%">
+				     	<div id="demo" class="w3-container w3-text-white">00:00:20</div>
+				    </div>
+				 </div>
+			</div>
+
+			<p>Let's Race!</p>
+
+			<div class="map">
+				<!-- Google Map API key: AIzaSyDwpBnUKrKrXXCFOlTBmBGI8ZaSWqx5zbU -->
+				<iframe width="300" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=14&center=32.8801%2C-117.2340&key=AIzaSyDwpBnUKrKrXXCFOlTBmBGI8ZaSWqx5zbU"></iframe>
+			</div>
+		</div>
+
+		<div class="toolbar">
+			<div class="toolbar-icon"><a href="main.html"><img src="assets/toolbar/home.png" class="toolbar-icon-img"></img></a></div>
+			<div class="toolbar-icon"><a href="map.html"><img src="assets/toolbar/map.png" class="toolbar-icon-img"></img></a></div>
+			<div class="toolbar-icon"><a href="alarm.html"><img src="assets/toolbar/alarm.png" class="toolbar-icon-img"></img></a></div>
+			<div class="toolbar-icon"><a href="avatars.html"><img src="assets/toolbar/avatar.png" class="toolbar-icon-img"></img></a></div>
+			<div class="toolbar-icon"><a href="achievements.html"><img src="assets/toolbar/achievement.png" class="toolbar-icon-img"></img></a></div>
+			<div class="toolbar-icon"><a href="quests.html"><img src="assets/toolbar/quest.png" class="toolbar-icon-img"></img></a></div>
+			<span class="stretch"></span>
+		</div>
 	</div>
 </body>
 </html>
