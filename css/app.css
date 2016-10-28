@@ -1,0 +1,60 @@
+.frame
+{
+  position: relative;
+  text-align: center;
+  width: 320px; 
+  height: 480px; 
+  border: #303030 2px solid;
+}
+
+.content
+{
+  text-align: center;
+  height: 420px;
+  position: absolute;
+}
+
+button
+{
+  color: #FFEB3B;
+  background-color: #607D8B;
+}
+
+body
+{
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* STUFF FROM FOUNDATION */
+
+button, .button
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.3rem 0.3rem;
+  font-size: 1rem;
+  background: #00369F;
+  border-color: #00369F;
+  color: #FFEB3B;
+  transition: background-color 300ms ease-out; 
+}
+
+button:hover, button:focus, .button:hover, .button:focus 
+{
+  background-color: #00205E;
+  color: #FFEB3B; 
+}

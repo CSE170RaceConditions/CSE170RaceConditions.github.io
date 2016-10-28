@@ -1,0 +1,85 @@
+.selection
+{
+  width: 320px;
+}
+
+.arrow-right 
+{
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #00369F;
+
+  display: inline-block;
+
+  top: 50%;
+  margin-top: -5px;
+  right: 20px;
+  position: absolute;
+}
+
+.arrow-left 
+{
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #00369F;
+
+  display: inline-block;
+
+  top: 50%;
+  margin-top: -5px;
+  left: 15px;
+  position: absolute;
+}
+
+.left-avatar
+{
+  width: 80px;
+  height: 80px;
+
+  top: 50%;
+  margin-top: -40px;
+  right: 50%;
+  margin-right: 50px;
+  position: absolute;
+  display: inline-block;
+}
+
+.center-avatar
+{
+  width: 100px;
+  height: 100px;
+
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  display: inline-block;
+}
+
+.right-avatar
+{
+  width: 80px;
+  height: 80px;
+
+  top: 50%;
+  margin-top: -40px;
+  left: 50%;
+  margin-left: 50px;
+  position: absolute;
+  display: inline-block;
+}
+
+
+/* COLOR PICKER */
+.color
+{
+  position: absolute;
+  left: 50%;
+  margin-left: -25%;
+  top: 300px;
+}
