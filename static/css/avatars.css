@@ -79,7 +79,16 @@
 .color
 {
   position: absolute;
-  left: 50%;
-  margin-left: -25%;
-  top: 300px;
+  left: 0;
+  top: 250px;
+  width: 320px;
+  height: 180px;
+  border: #303030 1px solid;
+}
+
+#primarypicker
+{
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
