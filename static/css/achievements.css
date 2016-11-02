@@ -1,0 +1,23 @@
+.achievementlist
+{
+  overflow-y: scroll; 
+  height: 300px;
+  left: 10px;
+  width: 300px;
+  position: absolute;
+}
+
+.achievement
+{
+  text-align: left;
+  left: 10px;
+}
+
+/* STUFF FROM W3 */
+
+.w3-progress-container{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
+.w3-progressbar{background-color:#757575;height:100%;position:absolute;line-height:inherit}
+
+
+/* Colors */
+.w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}

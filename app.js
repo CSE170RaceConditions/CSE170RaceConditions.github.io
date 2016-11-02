@@ -47,7 +47,10 @@ app.get("/main", main.view);
 app.get("/map", map.view);
 app.get("/alarm", alarm.view);
 app.get("/avatars", avatars.view);
+
 app.get("/achievements", achievements.view);
+app.get("/achievements/:username", achievements.getAchievements);
+
 app.get("/quests", quests.view);
 // Example route
 // app.get('/users', user.list);
