@@ -52,6 +52,7 @@ app.get("/achievements", achievements.view);
 app.get("/achievements/:username", achievements.getAchievements);
 
 app.get("/quests", quests.view);
+app.get("/quests/:username", quests.getQuests);
 // Example route
 // app.get('/users', user.list);
 

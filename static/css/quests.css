@@ -4,3 +4,28 @@
   background-size: 320px 480px;
   background-repeat: no-repeat;
 }
+
+.questlist
+{
+  overflow-y: scroll; 
+  height: 300px;
+  left: 10px;
+  width: 300px;
+  position: absolute;
+}
+
+.quest
+{
+  text-align: left;
+  left: 10px;
+}
+
+/* STUFF FROM W3 */
+
+.w3-progress-container{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
+.w3-progress-container-locked{width:100%;height:1.5em;position:relative;background-color:#888888}
+.w3-progressbar{background-color:#757575;height:100%;position:absolute;line-height:inherit}
+
+
+/* Colors */
+.w3-green,.w3-hover-green:hover{color:#FFFFFF!important;background-color:#335EFF!important}
