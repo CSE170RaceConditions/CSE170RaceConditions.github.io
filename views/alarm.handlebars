@@ -12,12 +12,10 @@
 			<h1>Alarm</h1>
 			<p>Just in case you forget.</p>
 		<div>
-		<!-- This was made with the help of http://www.w3schools.com/js/js_timing.asp and the HTML documentation http://devdocs.io/html/element/time to help with understanding and building a timer and explaining clock related functions -->
-		<!-- <button timeSet = "setTimeout()">Set hour</button>
- -->
 
-		<!-- Embeded from http://ipadstopwatch.com/timer.html. Tried putting a timer in the frame despite it not being an embeded widget-->
-		<iframe src="http://ipadstopwatch.com/timer.html" frameborder="0" scrolling="yes" width="300" height="200"></iframe>
+
+		<!-- Use chrome.alarms as a guide to help make an alarm/timer: https://developer.chrome.com/apps/alarms -->
+		<var timer = new console.chrome.alarms.create(timer, periodInMinutes)></var>
 
 
 		</div>
