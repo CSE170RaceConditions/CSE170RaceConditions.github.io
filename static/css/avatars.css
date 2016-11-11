@@ -43,109 +43,16 @@
   position: absolute;
 }
 
-.left-avatar
+.avatar
 {
   width: 80px;
   height: 80px;
+  border: rgba(0, 0, 0, 0) 2px solid;
 
-  top: 50%;
-  margin-top: 70px;
-  right: 50%;
-  margin-right: 50px;
-  position: absolute;
-  display: inline-block;
-}
-.bottomleft-avatar
-{
-  width: 80px;
-  height: 80px;
-
-  top: 50%;
-  margin-top: -40px;
-  right: 50%;
-  margin-right: 50px;
-  position: absolute;
   display: inline-block;
 }
 
-.center-avatar
+.avatar:hover
 {
-  width: 100px;
-  height: 100px;
-
-  top: 50%;
-  margin-top: -50px;
-  left: 50%;
-  margin-left: -50px;
-  position: absolute;
-  display: inline-block;
-}
-.center-avatar:hover
-{
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 15px solid transparent;
-  position: absolute;
-}
-.centerbottom-avatar
-{
-  width: 80px;
-  height: 80px;
-
-  top: 76%;
-  margin-top: -40px;
-  left: 53%;
-  margin-left: -50px;
-  position: absolute;
-  display: inline-block;
-}
-
-.right-avatar
-{
-  width: 80px;
-  height: 80px;
-
-  top: 50%;
-  margin-top: -40px;
-  left: 50%;
-  margin-left: 50px;
-  position: absolute;
-  display: inline-block;
-}
-.right-avatar:hover
-{
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 15px solid transparent;
-  position: absolute;
-}
-.bottomright-avatar
-{
-  width: 80px;
-  height: 80px;
-
-  top: 76%;
-  margin-top: -40px;
-  left: 50%;
-  margin-left: 50px;
-  position: absolute;
-  display: inline-block;
-}
-
-/* COLOR PICKER */
-.color
-{
-  position: absolute;
-  left: 0;
-  top: 250px;
-  width: 320px;
-  height: 180px;
-  border: #303030 1px solid;
-}
-
-#primarypicker
-{
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  border: rgba(0, 0, 0, 0.2) 2px solid;
 }
