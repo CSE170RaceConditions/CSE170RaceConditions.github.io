@@ -3,19 +3,25 @@
 	{
 		"demo": {
 			"selected": "star",
-			"star": "true",
-			"kevin": "true",
-			"cat": "false",
-			"ghost": "false",
-			"chick": "false"
+			"unlocked":
+			{
+				"star": "true",
+				"kevin": "true",
+				"cat": "false",
+				"ghost": "false",
+				"chick": "false"
+			}
 		},
 		"bob": {
 			"selected": "star",
-			"star": "true",
-			"kevin": "false",
-			"cat": "false",
-			"ghost": "false",
-			"chick": "false"	
+			"unlocked":
+			{
+				"star": "true",
+				"kevin": "false",
+				"cat": "false",
+				"ghost": "false",
+				"chick": "false"
+			}
 		}
 	}
 }
