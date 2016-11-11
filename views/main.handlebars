@@ -5,6 +5,10 @@
 	<link rel="stylesheet" href="css/toolbar.css"/>
 	<link rel="stylesheet" href="css/app.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
+
+	<link rel="stylesheet" href="css/alarm.css"/>
+	<script src="lib/jquery.js"></script>
+	<script src="js/alarm.js"></script>
 </head>
 <body>
 	<div class="frame" id="mainpage">
@@ -21,10 +25,35 @@
 
 			<img src="assets/avatars/star.png" class="avatar"></img>
 
-			<div class="map">
+			<!-- <div class="map">-->
 				<!-- Google Map API key: AIzaSyDwpBnUKrKrXXCFOlTBmBGI8ZaSWqx5zbU -->
-				<iframe width="300" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=14&center=32.8801%2C-117.2340&key=AIzaSyDwpBnUKrKrXXCFOlTBmBGI8ZaSWqx5zbU"></iframe>
+				<!--<iframe width="300" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=14&center=32.8801%2C-117.2340&key=AIzaSyDwpBnUKrKrXXCFOlTBmBGI8ZaSWqx5zbU"></iframe>
+			</div> -->
+			<div class = "timer">
+				<div class="alarm">
+				<div class="timeinput" id="hour">
+					<div class="upbutton" id="hourup"></div>
+					<div class="timedisplay" id="hourdisplay">00</div>
+					<div class="downbutton" id="hourdown"></div>
+				</div>
+				<div id="leftcolon">:</div>
+				<div class="timeinput" id="min">
+					<div class="upbutton" id="minup"></div>
+					<div class="timedisplay" id="mindisplay">00</div>
+					<div class="downbutton" id="mindown"></div>
+				</div>
+				<div id="rightcolon">:</div>
+				<div class="timeinput" id="sec">
+					<div class="upbutton" id="secup"></div>
+					<div class="timedisplay" id="secdisplay">00</div>
+					<div class="downbutton" id="secdown"></div>
+				</div>
 			</div>
+
+
+			</div>
+
+
 		</div>
 
 		<div class="toolbar">
