@@ -37,6 +37,13 @@
   left: 75px;
 }
 
+#logout
+{
+  position: absolute;
+  top: 396px;
+  left: 246px;
+}
+
 #time
 {
   position: absolute;

@@ -25,3 +25,9 @@ function move()
         }
     }
 }
+
+$("#logout").click(function()
+{
+    window.location.href = "/";
+    sessionStorage.removeItem("raceConditionsUsername");
+});
