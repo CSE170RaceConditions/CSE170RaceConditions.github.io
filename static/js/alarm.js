@@ -147,6 +147,21 @@ function timer()
 		}
 	}
 	updateDisplay();
+
+	// Learn about alert fucntion in http://www.w3schools.com/js/js_timing.asp
+	
+	if(alarmPlaying == 1 && alarmMins == 1 && alarmSecs ==0)
+	{
+		alert('Quick! You only have 2 minutes left');
+	}
+	if(alarmPlaying == 1 && alarmMins == 10 && alarmSecs ==0)
+	{
+		alert('You have ten minutes left');
+	}
+	if(alarmPlaying == 1 && alarmMins == 5 && alarmSecs ==0)
+	{
+		alert('You have five minutes left');
+	}
 }
 
 function updateDisplay()
