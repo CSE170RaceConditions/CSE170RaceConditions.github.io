@@ -150,7 +150,7 @@ function timer()
 
 	// Learn about alert fucntion in http://www.w3schools.com/js/js_timing.asp
 	
-	if(alarmPlaying == 1 && alarmMins == 1 && alarmSecs ==0)
+	if(alarmPlaying == 1 && alarmMins == 2 && alarmSecs ==0)
 	{
 		alert('Quick! You only have 2 minutes left');
 	}
