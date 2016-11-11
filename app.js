@@ -49,6 +49,7 @@ app.get("/alarm", alarm.view);
 app.get("/avatars", avatars.view);
 
 app.get("/login/:username/:password", index.login);
+app.get("/register/:username/:password", index.register);
 
 app.get("/achievements", achievements.view);
 app.get("/achievements/:username", achievements.getAchievements);

@@ -17,3 +17,17 @@ exports.login = function(req, res)
 
 	res.send({"result": result});
 }
+
+exports.register = function(req, res)
+{
+	var result;
+	if (accounts[req.params.username] != null)
+		result = "nameTaken";
+	else
+	{
+		accounts[req.params.username] = req.params.password;
+		result = "success";
+	}
+
+	res.send({"result": result});
+}
