@@ -32,8 +32,8 @@
 			},
 			{
 				"id": "dist1",
-				"title": "Baby Steps",
-				"description": "Travel 1 mile.",
+				"title": "On Time",
+				"description": "Finish 1 race before the timer hits 0.",
 				"progress": "1",
 				"max": "1"
 			}
