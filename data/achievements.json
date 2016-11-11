@@ -35,7 +35,7 @@
 				"title": "That's Everybody",
 				"description": "Unlock all avatars.",
 				"progress": "2",
-				"max": "6"
+				"max": "5"
 			}
 		],
 		"bob": [
@@ -72,7 +72,7 @@
 				"title": "That's Everybody",
 				"description": "Unlock all avatars.",
 				"progress": "4",
-				"max": "6"
+				"max": "5"
 			}
 		]
 	}
