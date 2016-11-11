@@ -1,10 +1,16 @@
-var username = "demo";
+var username;
 
 var quests;
 
 function setup()
 {
 	console.log("Setting up quests.");
+
+	username = sessionStorage.getItem("raceConditionsUsername");
+	if (username == null)
+	{
+		window.location.href = "/";
+	}
 
 	$.get("quests/" + username, function(data)
 	{

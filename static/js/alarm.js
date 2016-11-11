@@ -1,3 +1,5 @@
+var username;
+
 var initHours;
 var initMins;
 var initSecs;
@@ -10,6 +12,12 @@ var alarmPlaying;
 
 function setup()
 {
+	username = sessionStorage.getItem("raceConditionsUsername");
+	if (username == null)
+	{
+		window.location.href = "/";
+	}
+
 	alarmPlaying = localStorage.getItem("alarmPlaying");
 	if (alarmPlaying == null)
 		alarmPlaying = 0;

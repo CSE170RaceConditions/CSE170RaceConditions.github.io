@@ -1,8 +1,10 @@
+var username;
+
 function setup()
 {
-}
-
-function render(data)
-{
-	console.log(data);
+	username = sessionStorage.getItem("raceConditionsUsername");
+	if (username == null)
+	{
+		window.location.href = "/";
+	}
 }

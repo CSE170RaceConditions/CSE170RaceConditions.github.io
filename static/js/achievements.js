@@ -1,10 +1,16 @@
-var username = "demo";
+var username;
 
 var achievements;
 
 function setup()
 {
 	console.log("Setting up achievements.");
+
+	username = sessionStorage.getItem("raceConditionsUsername");
+	if (username == null)
+	{
+		window.location.href = "/";
+	}
 
 	$.get("achievements/" + username, function(data)
 	{

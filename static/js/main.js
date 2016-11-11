@@ -1,16 +1,27 @@
+var username;
+
+function setup()
+{
+    username = sessionStorage.getItem("raceConditionsUsername");
+    if (username == null)
+    {
+        window.location.href = "/";
+    }
+}
+
 // sample code from w3, will edit later
 function move() 
 {
-  var elem = document.getElementById("myBar");
-  var width = 20;
-  var id = setInterval(frame, 10);
-  function frame() {
+    var elem = document.getElementById("myBar");
+    var width = 20;
+    var id = setInterval(frame, 10);
+    function frame() {
     if (width >= 100) {
-      clearInterval(id);
+        clearInterval(id);
     } else {
-      width++;
-      elem.style.width = width + '%';
-      document.getElementById("demo").innerHTML = width * 1  + '%';
+        width++;
+        elem.style.width = width + '%';
+        document.getElementById("demo").innerHTML = width * 1  + '%';
+        }
     }
-  }
 }
