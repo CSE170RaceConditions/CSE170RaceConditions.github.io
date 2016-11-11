@@ -46,7 +46,10 @@ app.get('/', index.view);
 app.get("/main", main.view);
 app.get("/map", map.view);
 app.get("/alarm", alarm.view);
+
 app.get("/avatars", avatars.view);
+app.get("/avatars/:username", avatars.getAvatars);
+app.get("/avatars/:username/:avatar", avatars.setSelection);
 
 app.get("/login/:username/:password", index.login);
 app.get("/register/:username/:password", index.register);
