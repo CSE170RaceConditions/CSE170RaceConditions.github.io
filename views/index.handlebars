@@ -4,32 +4,37 @@
 	<title>Login Page</title>
 	<script src="lib/jquery.js"></script>
 	<script type="text/javascript" src="js/userlogin.js"></script>
+	<link rel="stylesheet" href="css/app.css"/>
 </head>
-<body>
-	<h1>Race Conditions</h1>
-	<b>Use name "demo" for login. Password is "password"</br>
-	Alternative account: "bob" Password: "bobiscool"</b>
-	<p>
-		Log in:
-		<form>
-			Username: <input type="text" id="login_username" autofocus></input></br>
-			Password: <input type="password" id="login_password"></input></br>
-			<input id="login_submit" type="button" class="btn" value="Login" onClick="login()" style="padding:5px 10px"></input>
-			<span id="loginoutput"></span>
-		</form>
-	</p>
+<body onload="setup()">
+	<div class="frame">
+		<div class="content">
+			<h1>Race Conditions</h1>
+			<b>Use name "demo" for login. Password is "password"</br>
+			Alternative account: "bob" Password: "bobiscool"</b>
+			<p>
+				Log in:
+				<form>
+					Username: <input type="text" id="login_username" autofocus></input></br>
+					Password: <input type="password" id="login_password"></input></br>
+					<input id="login_submit" type="button" class="btn" value="Login" onClick="login()" style="padding:5px 10px"></input>
+					<span id="loginoutput"></span>
+				</form>
+			</p>
 
-	<p>
-		Don't have an account? Sign up here! 
-		<form>
-			Username: <input type="text" id="reg_username" autofocus></input></br>
-			Password: <input type="password" id="reg_password"></input></br>
-			Confirm Password: <input type="password" id="reg_confirmpassword"></input></br>
-			<input id="reg_submit" type="button" class="btn" value="Register" onClick="register()" style="padding:5px 10px"></input>
-			<span id="registeroutput"></span>
-		</form>
-	</p>
+			<p>
+				Don't have an account? Sign up here! 
+				<form>
+					Username: <input type="text" id="reg_username" autofocus></input></br>
+					Password: <input type="password" id="reg_password"></input></br>
+					Confirm Password: <input type="password" id="reg_confirmpassword"></input></br>
+					<input id="reg_submit" type="button" class="btn" value="Register" onClick="register()" style="padding:5px 10px"></input>
+					<span id="registeroutput"></span>
+				</form>
+			</p>
 
-	<p>Account info does not persist across server restarts.</p>
+			<p>Account info does not persist across server restarts.</p>
+		</div>
+	</div>
 </body>
 </html>
