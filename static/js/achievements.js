@@ -23,6 +23,9 @@ function populateAchievementList()
 			var percentage = parseFloat(obj.progress) / parseFloat(obj.max) * 100;
 			console.log(percentage);
 
+			console.log(obj.description);
+			console.log(obj["description"]);
+
 			$(".achievementlist").append(
 				'<div class="achievement" id="' + obj.id + '">' +
 				'<b class="title">' + obj.title + '</b></br>' +

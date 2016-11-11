@@ -48,6 +48,8 @@ app.get("/map", map.view);
 app.get("/alarm", alarm.view);
 app.get("/avatars", avatars.view);
 
+app.get("/login/:username/:password", index.login);
+
 app.get("/achievements", achievements.view);
 app.get("/achievements/:username", achievements.getAchievements);
 
