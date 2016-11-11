@@ -1,4 +1,5 @@
 var username;
+var avatar;
 
 function setup()
 {
@@ -7,6 +8,21 @@ function setup()
     {
         window.location.href = "/";
     }
+
+    // Logout
+    $("#logout").click(function()
+    {
+        window.location.href = "/";
+        sessionStorage.removeItem("raceConditionsUsername");
+    });
+
+    // Load the avatar that the user has selected
+    $.get("avatars/" + username, function(data)
+    {
+        avatar = data.selected;
+        console.log("Selected avatar: " + avatar);
+        $(".avatar").attr("src", "assets/avatars/" + avatar + ".png");
+    });
 }
 
 // sample code from w3, will edit later
@@ -26,8 +42,3 @@ function move()
     }
 }
 
-$("#logout").click(function()
-{
-    window.location.href = "/";
-    sessionStorage.removeItem("raceConditionsUsername");
-});

@@ -7,8 +7,8 @@
 			{
 				"star": "true",
 				"kevin": "true",
-				"cat": "false",
-				"ghost": "false",
+				"cat": "true",
+				"ghost": "true",
 				"chick": "false"
 			}
 		},
