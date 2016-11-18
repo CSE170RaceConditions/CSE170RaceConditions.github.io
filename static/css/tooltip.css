@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+--!Using http://www.w3schools.com/howto/howto_css_tooltip.asp help us learn how to make a tooltip!--
+
+.tooltip 
+{
+	position: relative;
+	display inline;
+}
+
+.toolTip .tooltipicon
+{
+	visibility: hidden
+	height: 200 px;
+	widthL 200 px;
+	text-align: center;
+	background-color: #ffbb33
+}
+
+</html>
