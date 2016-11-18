@@ -1,17 +1,21 @@
 #achievementPage
 {
   background-image: url("../assets/achievement-bg.png");
-  background-size: 320px 480px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .achievementlist
 {
   overflow-y: scroll; 
-  height: 300px;
-  left: 10px;
+  min-height: 300px;
+  height: 80%;
+  left: 50%;
+  margin-left: -150px;
   width: 300px;
   position: absolute;
+
+  border: #000000 solid 1px;
 }
 
 .achievement
