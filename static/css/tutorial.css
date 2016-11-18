@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-
-<html>
-
 /* scrapped tool tip, wil make a popup for tutorial however. 
 Here is the tutorial used: http://www.w3schools.com/howto/howto_js_popup.asp*/
 
 .tutorial
 {
-	position: relative;
+	position: absolute;
+	height: 45px;
+	width: 45px;
+	top: 10px;
+	left: 265px;
 	display inline;
 	cursor pointer;
 }
 
 .tutorial .tutorialpopup
 {
-	visibility: hidden
-	height: 500 px;
-	width: 500 px;
-	text-align: center;
+	visibility: hidden;
+	text-align: right;
 	background-color: #ffbb33
 }
 .tutorial .tutorialpopup::after
@@ -29,6 +27,3 @@ Here is the tutorial used: http://www.w3schools.com/howto/howto_js_popup.asp*/
 .tutorial .appear {
 	visibility: visible;
 }
-
-
-</html>
