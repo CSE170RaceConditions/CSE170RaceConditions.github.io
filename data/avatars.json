@@ -1,6 +1,17 @@
 {
 	"people": 
 	{
+		"default": {
+			"selected": "star",
+			"unlocked":
+			{
+				"star": "true",
+				"kevin": "false",
+				"cat": "false",
+				"ghost": "false",
+				"chick": "false"
+			}
+		},
 		"demo": {
 			"selected": "star",
 			"unlocked":

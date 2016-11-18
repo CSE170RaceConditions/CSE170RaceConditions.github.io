@@ -7,7 +7,10 @@ exports.view = function(req, res){
 
 exports.getAvatars = function(req, res)
 {
-	res.send(avatars.people[req.params.username]);
+	if (avatars.people[req.params.username] == null)
+		res.send(avatars.people["default"]);
+	else
+		res.send(avatars.people[req.params.username]);
 }
 
 exports.setSelection = function(req, res)

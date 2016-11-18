@@ -7,8 +7,8 @@ exports.view = function(req, res){
 
 exports.getQuests = function(req, res)
 {
-	console.log("get quests");
-	console.log(req.params);
-	console.log(data.people[req.params.username]);
-	res.send(data.people[req.params.username]);
+	if (data.people[req.params.username] == null)
+		res.send(data.people["default"]);
+	else
+		res.send(data.people[req.params.username]);
 }
