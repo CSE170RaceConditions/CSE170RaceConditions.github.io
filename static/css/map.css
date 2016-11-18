@@ -1,6 +1,12 @@
 #mapPage
 {
   background-image: url("../assets/map-bg.png");
-  background-size: 320px 480px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+iframe
+{
+	width: 80%;
+	height: 70%;
 }
