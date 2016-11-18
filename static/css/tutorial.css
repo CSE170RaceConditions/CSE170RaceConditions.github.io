@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+/* scrapped tool tip, wil make a popup for tutorial however. 
+Here is the tutorial used: http://www.w3schools.com/howto/howto_js_popup.asp*/
+
+.tutorial
+{
+	position: relative;
+	display inline;
+	cursor pointer;
+}
+
+.tutorial .tutorialpopup
+{
+	visibility: hidden
+	height: 500 px;
+	width: 500 px;
+	text-align: center;
+	background-color: #ffbb33
+}
+.tutorial .tutorialpopup::after
+{
+	content: "";
+	postion: absolute;
+}
+
+.tutorial .appear {
+	visibility: visible;
+}
+
+
+</html>
