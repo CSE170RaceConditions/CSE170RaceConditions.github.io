@@ -11,7 +11,6 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var main = require("./routes/main");
 var map = require("./routes/map");
-var alarm = require("./routes/alarm");
 var avatars = require("./routes/avatars");
 var achievements = require("./routes/achievements");
 var quests = require("./routes/quests");
@@ -45,7 +44,6 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get("/main", main.view);
 app.get("/map", map.view);
-app.get("/alarm", alarm.view);
 
 app.get("/avatars", avatars.view);
 app.get("/avatars/:username", avatars.getAvatars);

@@ -30,20 +30,6 @@
   height: 120px;
 }
 
-#button
-{
-  position: absolute;
-  top: 30px;
-  left: 75px;
-}
-
-#logout
-{
-  position: absolute;
-  top: 396px;
-  left: 246px;
-}
-
 #time
 {
   position: absolute;

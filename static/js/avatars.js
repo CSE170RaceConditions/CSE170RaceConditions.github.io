@@ -9,7 +9,16 @@ function setup()
 	if (username == null)
 	{
 		window.location.href = "/";
+		return;
 	}
+
+	// Logout
+    $("#logout").click(function()
+    {
+        window.location.href = "/";
+        sessionStorage.removeItem("raceConditionsUsername");
+        console.log("Logging out...");
+    });
 
 	// Load the avatars that the user has unlocked
 	$.get("avatars/" + username, function(data)

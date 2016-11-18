@@ -10,7 +10,16 @@ function setup()
 	if (username == null)
 	{
 		window.location.href = "/";
+		return;
 	}
+
+	// Logout
+    $("#logout").click(function()
+    {
+        window.location.href = "/";
+        sessionStorage.removeItem("raceConditionsUsername");
+        console.log("Logging out...");
+    });
 
 	$.get("achievements/" + username, function(data)
 	{
@@ -38,7 +47,7 @@ function populateAchievementList()
 				'<small class="description">' + obj.description + '</small>' +
 				'<div class="progressbar">' +
 				'<div class="w3-progress-container" style="width: 280px;">' +
-			    '<div id="bar" class="w3-progressbar w3-green" style="width:' + percentage + '%">' 
+			    '<div id="bar" class="w3-progressbar w3-green" style="width:' + percentage + '%">  ' 
 			    + obj.progress + '/' + obj.max + '</div>' +
 				'</div></div></div>');
 		}

@@ -7,6 +7,7 @@ function setup()
     if (username == null)
     {
         window.location.href = "/";
+        return;
     }
 
     // Logout
@@ -14,6 +15,7 @@ function setup()
     {
         window.location.href = "/";
         sessionStorage.removeItem("raceConditionsUsername");
+        console.log("Logging out...");
     });
 
     // Load the avatar that the user has selected
