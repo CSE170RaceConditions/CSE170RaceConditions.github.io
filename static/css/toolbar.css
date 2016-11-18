@@ -5,6 +5,8 @@
   position: absolute;
   bottom: 0;
   width: 320px;
+  left: 50%;
+  margin-left: -160px;
 }
 
 .toolbar-icon
