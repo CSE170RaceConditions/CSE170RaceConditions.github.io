@@ -14,49 +14,45 @@
 	<div class="frame" id="mainpage">
 
 		<div class="content">
-			<!-- <div class="progressbar">
-				<div class="w3-progress-container" style="width: 300px;">
-				    <div id="bar" class="w3-progressbar w3-green" style="width:20%"></div>
-				    <div id="time" class="w3-container">00:00:20</div>
-				    <input type="button" class="button" id="button" value="Start!"></input>
-				 </div>
-			</div> -->
+			<h1>Let's race!</h1>
 
 			<!-- Tutorial -->
 			<img src="assets/toolbar/tutorial.png" class="tutorial"></img>
-
-			<img src="assets/avatars/star.png" class="avatar"></img>
 
 			<!-- <div class="map">-->
 				<!-- Google Map API key: AIzaSyDwpBnUKrKrXXCFOlTBmBGI8ZaSWqx5zbU -->
 				<!--<iframe width="300" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=14&center=32.8801%2C-117.2340&key=AIzaSyDwpBnUKrKrXXCFOlTBmBGI8ZaSWqx5zbU"></iframe>
 			</div> -->
 
-			<div class="alarm">
-				<div class="timeinput" id="hour">
-					<div class="upbutton" id="hourup"></div>
-					<div class="timedisplay" id="hourdisplay">00</div>
-					<div class="downbutton" id="hourdown"></div>
+			<div class="alarmbackground">
+				<div class="alarm">
+					<div class="timeinput" id="hour">
+						<div class="upbutton" id="hourup"></div>
+						<div class="timedisplay" id="hourdisplay">00</div>
+						<div class="downbutton" id="hourdown"></div>
+					</div>
+					<div id="leftcolon">:</div>
+					<div class="timeinput" id="min">
+						<div class="upbutton" id="minup"></div>
+						<div class="timedisplay" id="mindisplay">00</div>
+						<div class="downbutton" id="mindown"></div>
+					</div>
+					<div id="rightcolon">:</div>
+					<div class="timeinput" id="sec">
+						<div class="upbutton" id="secup"></div>
+						<div class="timedisplay" id="secdisplay">00</div>
+						<div class="downbutton" id="secdown"></div>
+					</div>
 				</div>
-				<div id="leftcolon">:</div>
-				<div class="timeinput" id="min">
-					<div class="upbutton" id="minup"></div>
-					<div class="timedisplay" id="mindisplay">00</div>
-					<div class="downbutton" id="mindown"></div>
-				</div>
-				<div id="rightcolon">:</div>
-				<div class="timeinput" id="sec">
-					<div class="upbutton" id="secup"></div>
-					<div class="timedisplay" id="secdisplay">00</div>
-					<div class="downbutton" id="secdown"></div>
+
+				<div class="alarmbuttons">
+					<div class="alarmbutton" id="play"><img class="alarmicon" src="assets/alarm/play-button.png"></img></div>
+					<div class="alarmbutton" id="pause"><img class="alarmicon" src="assets/alarm/pause-button.png"></img></div>
+					<div class="alarmbutton" id="reset"><img class="alarmicon" src="assets/alarm/reset-button.png"></img></div>
 				</div>
 			</div>
 
-			<div class="alarmbuttons">
-				<div class="alarmbutton" id="play"><img class="alarmicon" src="assets/alarm/play-button.png"></img></div>
-				<div class="alarmbutton" id="pause"><img class="alarmicon" src="assets/alarm/pause-button.png"></img></div>
-				<div class="alarmbutton" id="reset"><img class="alarmicon" src="assets/alarm/reset-button.png"></img></div>
-			</div>
+			<img src="assets/avatars/star.png" class="avatar"></img>
 
 		</div>
 

@@ -6,10 +6,9 @@ Here is the tutorial used: http://www.w3schools.com/howto/howto_js_popup.asp*/
 	position: absolute;
 	height: 45px;
 	width: 45px;
-	top: 10px;
-	left: 265px;
-	display inline;
-	cursor pointer;
+	top: 20px;
+	right: 30px;
+	cursor: pointer;
 }
 
 .tutorial .tutorialpopup
