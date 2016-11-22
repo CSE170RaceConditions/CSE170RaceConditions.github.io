@@ -21,6 +21,9 @@ function setup()
     // Tutorial
     $(".tutorial").click(function()
     {
+        // Google Analytics event recorder for every time the tutorial button
+        // is clicked.
+        ga('send','event','tutorial','click');
         alert(`Welcome to Race Conditions! Here you can race against the avatar below and see who can reach their destination first!
 1) Figure out where you want to go!
 2) Go to the map and click "View Larger Map"

@@ -43,6 +43,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get("/main", main.view);
+app.get("/main2", main.view2); // Second main page for A/B testing
 app.get("/map", map.view);
 
 app.get("/avatars", avatars.view);
