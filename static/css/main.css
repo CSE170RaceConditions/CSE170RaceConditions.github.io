@@ -176,7 +176,7 @@
   margin-top: -10px;
 }
 
-#play
+/*#play
 {
   left: 70px;
 }
@@ -189,6 +189,29 @@
 #reset
 {
   left: 200px;
+}*/
+
+#start
+{
+  position: absolute;
+  left: 136px;
+  top: 20px;
+}
+
+#pause
+{
+  position: absolute;
+  left: 133px;
+  top: 20px;
+  display: none;
+}
+
+#finish
+{
+  position: absolute;
+  left: 130px;
+  top: 50px;
+  display: none;
 }
 
 .alarmicon

@@ -37,29 +37,14 @@ function setup()
     {
         avatar = data.selected;
         console.log("Selected avatar: " + avatar);
-        $(".avatar").attr("src", "assets/avatars/" + avatar + ".png");
+        if (alarmPlaying == 0)
+            $(".avatar").attr("src", "assets/avatars/" + avatar + ".png");
+        else
+            $(".avatar").attr("src", "assets/avatars/" + avatar + "-run.gif");
     });
 
     setupAlarm();
 }
-
-// sample code from w3, will edit later
-function move() 
-{
-    var elem = document.getElementById("myBar");
-    var width = 20;
-    var id = setInterval(frame, 10);
-    function frame() {
-    if (width >= 100) {
-        clearInterval(id);
-    } else {
-        width++;
-        elem.style.width = width + '%';
-        document.getElementById("demo").innerHTML = width * 1  + '%';
-        }
-    }
-}
-
 
 function setupAlarm()
 {
@@ -91,10 +76,14 @@ function setupAlarm()
     {
         $(".upbutton").hide();
         $(".downbutton").hide();
+        $("#start").hide();
+        $("#pause").show();
+        $("#finish").show();
     }
 
     updateDisplay();
 
+    /*
     $("#play").click(function()
     {
         $(".upbutton").hide();
@@ -116,6 +105,53 @@ function setupAlarm()
         alarmPlaying = 0;
         reset();
         updateDisplay();
+    })
+    */
+
+    $("#start").click(function()
+    {
+        $("#start").hide();
+        $("#pause").show();
+        $("#pause").innerHTML = "Pause";
+        $("#finish").show();
+        $(".upbutton").hide();
+        $(".downbutton").hide();
+        alarmPlaying = 1;
+        updateDisplay();
+        $(".avatar").attr("src", "assets/avatars/" + avatar + "-run.gif");
+    });
+
+    $("#pause").click(function()
+    {
+        if (alarmPlaying == 1)
+        {
+            alarmPlaying = 0;
+            this.innerHTML = "Resume";
+            $("#pause").css("left", "125px");
+            $(".avatar").attr("src", "assets/avatars/" + avatar + ".png");
+        
+        }
+        else
+        {
+            alarmPlaying = 1;
+            this.innerHTML = "Pause";
+            $("#pause").css("left", "133px");
+            $(".avatar").attr("src", "assets/avatars/" + avatar + "-run.gif");
+        }
+        updateDisplay();
+    })
+
+    $("#finish").click(function()
+    {
+        $("#finish").hide();
+        $("#pause").hide();
+        $("#start").show();
+        $(".upbutton").show();
+        $(".downbutton").show();
+        alarmPlaying = 0;
+        reset();
+        updateDisplay();
+        $(".avatar").attr("src", "assets/avatars/" + avatar + ".png");
     })
 
     $("#hourup").click(function()
