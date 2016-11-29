@@ -13,28 +13,36 @@ exports.getAchievements = function(req, res)
 		res.send(data.people[req.params.username]);
 }
 
+/*
+ * Take in an achievement type and increment all achievements
+ * of that type, sending back the completed list for easy
+ * display.
+ */
 exports.incrementAchievement = function(req, res)
 {
 	var account = data.people[req.params.username];
+	var completed = "";
 
-	var completed = [];
+	var types = JSON.parse(req.params.achievementType);
 
-	for (id in account)
+	for (i in types.achievementType)
 	{
-		if (id.match(req.params.achievementType + ".*"))
+		var type = types.achievementType[i];
+		for (id in account)
 		{
-			console.log("checking " + id);
-
-			var obj = account[id];
-			if (parseFloat(obj.progress) < parseFloat(obj.max))
+			if (id.match(type))
 			{
-				obj.progress = parseFloat(obj.progress) + 1;
+				var obj = account[id];
+				if (parseFloat(obj.progress) < parseFloat(obj.max))
+				{
+					obj.progress = parseFloat(obj.progress) + 1;
 
-				if (obj.progress == obj.max)
-					completed.push(id);
+					if (obj.progress == obj.max)
+						completed += "\n  - " + obj.title;
+				}
 			}
 		}
 	}
 
-	console.log("completed: " + completed);
+	res.send({"completed": completed});
 }

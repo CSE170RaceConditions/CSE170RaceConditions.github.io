@@ -17,14 +17,14 @@
 				"progress": "0",
 				"max": "100"			
 			},
-			"count3":
+			"timer1":
 			{
 				"title": "Speedster",
 				"description": "Finish a race with at least 5 minutes left on the timer.",
 				"progress": "0",
 				"max": "1"			
 			},
-			"timer1":
+			"timer2":
 			{
 				"title": "Fast and Furious",
 				"description": "Finish 10 races with at least 5 minutes left on the timer.",
@@ -45,24 +45,24 @@
 			{
 				"title": "Extraordinary racer",
 				"description": "Complete 50 lifetime races.",
-				"progress": "4",
+				"progress": "49",
 				"max": "50"		
 			},
 			"count2":
 			{
 				"title": "Unstoppable racer",
 				"description": "Complete 100 lifetime races.",
-				"progress": "4",
+				"progress": "49",
 				"max": "100"			
 			},
-			"count3":
+			"timer1":
 			{
 				"title": "Speedster",
 				"description": "Finish a race with at least 5 minutes left on the timer.",
 				"progress": "0",
 				"max": "1"			
 			},
-			"count4":
+			"timer2":
 			{
 				"title": "Fast and Furious",
 				"description": "Finish 10 races with at least 5 minutes left on the timer.",

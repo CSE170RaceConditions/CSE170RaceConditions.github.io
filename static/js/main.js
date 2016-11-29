@@ -139,6 +139,19 @@ function setupAlarm()
 
     $("#finish").click(function()
     {
+        typeArray = {"achievementType": ["count"]};
+
+        if (alarmHours > 0 || alarmMins >= 5)
+            typeArray.achievementType.push("timer");
+
+        /* Achievement/Quest stuff */
+        $.get("achievements/" + username + "/" + JSON.stringify(typeArray), function(data)
+        {
+            if (data.completed != "")
+                alert("You got new achievements! You have completed:" + data.completed);
+        });
+
+
         $("#finish").hide();
         $("#pause").hide();
         $("#start").show();
@@ -235,15 +248,18 @@ function timer()
 
     // Learn about alert fucntion in http://www.w3schools.com/js/js_timing.asp
     
-    if(alarmPlaying == 1 && alarmMins == 2 && alarmSecs ==0)
+    if(alarmPlaying == 1 && alarmHours == 0
+        && alarmMins == 2 && alarmSecs == 0)
     {
         alert('Quick! You only have 2 minutes left');
     }
-    if(alarmPlaying == 1 && alarmMins == 10 && alarmSecs ==0)
+    if(alarmPlaying == 1 && alarmHours == 0
+        && alarmMins == 10 && alarmSecs == 0)
     {
         alert('You have ten minutes left');
     }
-    if(alarmPlaying == 1 && alarmMins == 5 && alarmSecs ==0)
+    if(alarmPlaying == 1 && alarmHours == 0
+        && alarmMins == 5 && alarmSecs == 0)
     {
         alert('You have five minutes left');
     }
