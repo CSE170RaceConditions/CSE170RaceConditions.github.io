@@ -105,7 +105,7 @@
   height: 0; 
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #ffffff;
+  border-bottom: 10px solid #FFFFFF;
 
   left: 50%;
   position: absolute;
@@ -115,7 +115,7 @@
 
 .upbutton:hover
 {
-  border-bottom: 15px solid #ffffff;
+  border-bottom: 15px solid #FFFFFF
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   margin-top: -5px;
@@ -138,7 +138,7 @@
   height: 0; 
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #ffffff;
+  border-top: 10px solid #FFFFFF;
 
   position: absolute;
   top: 90px;
@@ -150,7 +150,7 @@
 {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 15px solid #ffffff;
+  border-top: 15px solid #FFFFFF;
   margin-left: -15px;
 }
 
