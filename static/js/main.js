@@ -24,12 +24,7 @@ function setup()
         // Google Analytics event recorder for every time the tutorial button
         // is clicked.
         ga('send','event','tutorial','click');
-        alert(`Welcome to Race Conditions! Here you can race against the avatar below and see who can reach their destination first!
-1) Figure out where you want to go!
-2) Go to the map and click "View Larger Map"
-3) Put in your start and end location. Remember how long it takes!
-4) Go back to the home menu and put that time into the timer. 
-5) Press the play button and begin your race!`);
+        alert(`Welcome to Race Conditions! Here you can race against the avatar below and see who can reach their goal first!  Set up a time of how long you want to exercise, and complete your planned goal before the avatar can finish their race! Unlock rewards and achievements the more you complete your fitness goals and have fun!`);
     });
 
     // Load the avatar that the user has selected
