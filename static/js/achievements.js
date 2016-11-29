@@ -31,24 +31,24 @@ function setup()
 
 function populateAchievementList()
 {
-	for (i in achievements)
-		{
-			var obj = achievements[i];
+	for (id in achievements)
+	{
+		var obj = achievements[id];
 
-			var percentage = parseFloat(obj.progress) / parseFloat(obj.max) * 100;
-			console.log(percentage);
+		var percentage = parseFloat(obj.progress) / parseFloat(obj.max) * 100;
+		console.log(percentage);
 
-			console.log(obj.description);
-			console.log(obj["description"]);
+		console.log(obj.description);
+		console.log(obj["description"]);
 
-			$(".achievementlist").append(
-				'<div class="achievement" id="' + obj.id + '">' +
-				'<b class="title">' + obj.title + '</b></br>' +
-				'<small class="description">' + obj.description + '</small>' +
-				'<div class="progressbar">' +
-				'<div class="w3-progress-container" style="width: 280px;">' +
-			    '<div id="bar" class="w3-progressbar w3-green" style="width:' + percentage + '%">  ' 
-			    + obj.progress + '/' + obj.max + '</div>' +
-				'</div></div></div>');
-		}
+		$(".achievementlist").append(
+			'<div class="achievement" id="' + obj.id + '">' +
+			'<b class="title">' + obj.title + '</b></br>' +
+			'<small class="description">' + obj.description + '</small>' +
+			'<div class="progressbar">' +
+			'<div class="w3-progress-container" style="width: 280px;">' +
+		    '<div id="bar" class="w3-progressbar w3-green" style="width:' + percentage + '%">  ' 
+		    + obj.progress + '/' + obj.max + '</div>' +
+			'</div></div></div>');
+	}
 }

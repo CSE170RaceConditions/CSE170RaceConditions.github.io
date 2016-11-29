@@ -53,6 +53,7 @@ app.get("/register/:username/:password", index.register);
 
 app.get("/achievements", achievements.view);
 app.get("/achievements/:username", achievements.getAchievements);
+app.get("/achievements/:username/:achievementType", achievements.incrementAchievement);
 
 app.get("/quests", quests.view);
 app.get("/quests/:username", quests.getQuests);

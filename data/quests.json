@@ -1,116 +1,81 @@
 {
 	"people": 
 	{
-		"default": [
+		"default":
+		{
+			"count1":
 			{
-				"id": "count1",
 				"title": "My First Race!",
 				"description": "Complete 1 race.",
 				"progress": "0",
 				"max": "1"		
 			},
+			"count2":
 			{
-				"id": "count2",
 				"title": "Novice Racer",
 				"description": "Complete 5 races.",
 				"progress": "0",
 				"max": "5"			
 			},
+			"count3":
 			{
-				"id": "count3",
 				"title": "Intermediate Racer",
 				"description": "Complete 10 races.",
 				"progress": "0",
 				"max": "10"			
 			},
+			"count4":
 			{
-				"id": "count4",
 				"title": "Expert Racer",
 				"description": "Complete 20 races.",
 				"progress": "0",
 				"max": "20"			
 			},
+			"dist1":
 			{
-				"id": "dist1",
 				"title": "On Time",
 				"description": "Finish 1 race before the timer hits 0.",
 				"progress": "0",
 				"max": "1"
 			}
-		],
-		"demo": [
+		},
+		"demo":
+		{
+			"count1":
 			{
-				"id": "count1",
 				"title": "My First Race!",
 				"description": "Complete 1 race.",
 				"progress": "1",
 				"max": "1"		
 			},
+			"count2":
 			{
-				"id": "count2",
-				"title": "Novice Racer",
-				"description": "Complete 5 races.",
-				"progress": "3",
-				"max": "5"			
-			},
-			{
-				"id": "count3",
-				"title": "Intermediate Racer",
-				"description": "Complete 10 races.",
-				"progress": "3",
-				"max": "10"			
-			},
-			{
-				"id": "count4",
-				"title": "Expert Racer",
-				"description": "Complete 20 races.",
-				"progress": "3",
-				"max": "20"			
-			},
-			{
-				"id": "dist1",
-				"title": "On Time",
-				"description": "Finish 1 race before the timer hits 0.",
-				"progress": "1",
-				"max": "1"
-			}
-		],
-		"bob": [
-			{
-				"id": "count1",
-				"title": "My First Race!",
-				"description": "Complete 1 race.",
-				"progress": "1",
-				"max": "1"		
-			},
-			{
-				"id": "count2",
 				"title": "Novice Racer",
 				"description": "Complete 5 races.",
 				"progress": "5",
 				"max": "5"			
 			},
+			"count3":
 			{
-				"id": "count3",
 				"title": "Intermediate Racer",
 				"description": "Complete 10 races.",
-				"progress": "10",
+				"progress": "9",
 				"max": "10"			
 			},
+			"count4":
 			{
-				"id": "count4",
 				"title": "Expert Racer",
 				"description": "Complete 20 races.",
-				"progress": "14",
+				"progress": "9",
 				"max": "20"			
 			},
+			"dist1":
 			{
-				"id": "dist1",
 				"title": "On Time",
 				"description": "Finish 1 race before the timer hits 0.",
 				"progress": "1",
 				"max": "1"
 			}
-		]
+		}
 	}
 }

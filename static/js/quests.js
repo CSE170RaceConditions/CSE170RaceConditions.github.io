@@ -31,21 +31,21 @@ function setup()
 
 function populateQuestList()
 {
-	for (i in quests)
-		{
-			var obj = quests[i];
+	for (id in quests)
+	{
+		var obj = quests[id];
 
-			var percentage = parseFloat(obj.progress) / parseFloat(obj.max) * 100;
-			console.log(percentage);
+		var percentage = parseFloat(obj.progress) / parseFloat(obj.max) * 100;
+		console.log(percentage);
 
-			$(".questlist").append(
-				'<div class="quest" id="' + obj.id + '">' +
-				'<b class="title">' + obj.title + '</b></br>' +
-				'<small class="description">' + obj.description + '</small>' +
-				'<div class="progressbar">' +
-				'<div class="w3-progress-container" style="width: 280px;">' +
-			    '<div id="bar" class="w3-progressbar w3-green" style="width:' + percentage + '%">  ' 
-			    + obj.progress + '/' + obj.max + '</div>' +
-				'</div></div></div>');
-		}
+		$(".questlist").append(
+			'<div class="quest" id="' + obj.id + '">' +
+			'<b class="title">' + obj.title + '</b></br>' +
+			'<small class="description">' + obj.description + '</small>' +
+			'<div class="progressbar">' +
+			'<div class="w3-progress-container" style="width: 280px;">' +
+		    '<div id="bar" class="w3-progressbar w3-green" style="width:' + percentage + '%">  ' 
+		    + obj.progress + '/' + obj.max + '</div>' +
+			'</div></div></div>');
+	}
 }
