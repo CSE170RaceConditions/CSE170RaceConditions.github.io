@@ -4,6 +4,7 @@ var avatar;
 function setup()
 {
     username = sessionStorage.getItem("raceConditionsUsername");
+    $(".tutorial_dialog").hide();
     if (username == null)
     {
         window.location.href = "/";
@@ -24,12 +25,7 @@ function setup()
         // Google Analytics event recorder for every time the tutorial button
         // is clicked.
         ga('send','event','tutorial','click');
-        alert(`Welcome to Race Conditions! Here you can race against the avatar below and see who can reach their destination first!
-1) Figure out where you want to go!
-2) Go to the map and click "View Larger Map"
-3) Put in your start and end location. Remember how long it takes!
-4) Go back to the home menu and put that time into the timer. 
-5) Press the play button and begin your race!`);
+        $(".tutorial_dialog").show();
     });
 
     // Load the avatar that the user has selected
