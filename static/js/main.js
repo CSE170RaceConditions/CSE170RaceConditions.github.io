@@ -4,6 +4,7 @@ var avatar;
 function setup()
 {
     username = sessionStorage.getItem("raceConditionsUsername");
+    $(".tutorial_dialog").hide();
     if (username == null)
     {
         window.location.href = "/";
@@ -24,7 +25,7 @@ function setup()
         // Google Analytics event recorder for every time the tutorial button
         // is clicked.
         ga('send','event','tutorial','click');
-        alert(`Welcome to Race Conditions! Here you can race against the avatar below and see who can reach their goal first!  Set up a time of how long you want to exercise, and complete your planned goal before the avatar can finish their race! Unlock rewards and achievements the more you complete your fitness goals and have fun!`);
+        $(".tutorial_dialog").show();
     });
 
     // Load the avatar that the user has selected

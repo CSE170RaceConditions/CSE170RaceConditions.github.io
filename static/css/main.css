@@ -48,6 +48,18 @@
   color: #FFFFFF;
 }
 
+.tutorial_dialog
+{
+  width: 320px;
+  height: 200px;
+  position: absolute;
+  left: 80%;
+  margin-left: -160px;
+  margin-top: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+}
+
 .alarmbuttons
 {
   width: 320px;
